@@ -1,0 +1,26 @@
+<div class = 'container'>
+  <h2>Create new restaurant</h2>
+  <%= simple_form_for(@restaurant) do |f| %>
+    <% if @restaurant.errors.any? %>
+      <div class="errors-container">
+        <ul>
+          <% @restaurant.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  <div class="form col-xs-6 col-xs-offset-3">
+    <div class="form-inputs">
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :phone_number %>
+      <%= f.input :category, label: "Choose category from chinese, italian, japanese, french, belgian"%>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit %>
+    </div>
+    <% end %>
+  </div>
+</div>

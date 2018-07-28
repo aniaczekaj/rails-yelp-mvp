@@ -1,0 +1,11 @@
+<div class='container box-restaurant'>
+  <h1><%= @restaurant.name %></h1>
+  <h3>Address: <%= @restaurant.address %></h3>
+  <h3>Phone number: <%= @restaurant.phone_number %></h3>
+  <h3>Category: <%= @restaurant.category %></h3>
+  <div class="form-inline">
+    <%= link_to "Back to the list", restaurants_path, class: "btn btn-primary"%>
+    <%= link_to "Add review", new_restaurant_review_path(@restaurant), class: "btn btn-primary"%>
+    <%= link_to "See the reviews", restaurant_reviews_path(@restaurant), class: "btn btn-primary"%>
+  </div>
+</div>

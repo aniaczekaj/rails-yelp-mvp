@@ -1,0 +1,28 @@
+body {
+  background-image: url("https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 3px 2px 7px #0e0d0d;
+}
+
+.container {
+  text-align: center;
+}
+
+.box {
+  border-radius: 10px;
+  border: 1px solid #323030;
+  background-color: rgba(100, 100, 100, 0.6);
+  padding: 20px 0;
+}
+
+
+.box:hover {
+  opacity: 0.9;
+}
+
+.button {
+  text-align: center;
+  margin: 20px;
+}
